@@ -1,0 +1,7 @@
+This repository contains a CloudFormation template to spin up a Jupyter environment on AWS (optionally with CUDA support if using the g2 instance family)
+
+It also contains a number of Jupyter notebooks as examples.
+
+There will be a number of labs available here in the future too which will be provided as interactive Jupyter notebooks.
+
+Enjoy!
