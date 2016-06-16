@@ -2,6 +2,6 @@ This repository contains a CloudFormation template to spin up a Jupyter environm
 
 It also contains a number of Jupyter notebooks as examples.
 
-There will be a number of labs available here in the future too which will be provided as interactive Jupyter notebooks.
+A number of labs are available in /labs. All labs are provided as interactive Jupyter notebooks.
 
 Enjoy!
