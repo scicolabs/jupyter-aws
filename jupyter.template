@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
-  "Description" : "AWS CloudFormation Template to build a Jupyter 4.1.0 environment with IPython Clusters and NVIDIA CUDA support.",
+  "Description" : "AWS CloudFormation Template to build a Jupyter 4.1.0 environment with IPython Clusters and NVIDIA CUDA support. Support for Python 2, R and Julia is included.",
 
   "Parameters" : {
     "KeyName": {
@@ -109,7 +109,7 @@
       "cc2.8xlarge" : { "Arch" : "HVM64"  }
     },
     "AWSRegionArch2AMI" : {
-      "ap-southeast-2"   : {"HVM64" : "ami-58facb3b", "HVMG2" : "ami-65123b06"}
+      "ap-southeast-2"   : {"HVM64" : "ami-58facb3b", "HVMG2" : "ami-6cfdcc0f"}
     }
 
   },
