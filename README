@@ -1,7 +1,5 @@
-This repository contains a CloudFormation template to spin up a Jupyter environment on AWS (optionally with CUDA support if using the g2 instance family)
+Juypter-aws is "Jupyter on AWS with batteries included - in 60 seconds".
 
-It also contains a number of Jupyter notebooks as examples.
+This repository contains a CloudFormation template to spin up a Jupyter environment on AWS. CUDA support is bundled in if using the g2 or p2 instance family. A number of Jupyter notebooks are also supplied as examples (see /labs). All examples are provided as interactive Jupyter notebooks.
 
-A number of labs are available in /labs. All labs are provided as interactive Jupyter notebooks.
-
-Enjoy!
+Enjoy. Please log many feature requests and bug reports!
