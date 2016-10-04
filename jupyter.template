@@ -13,8 +13,8 @@
     "InstanceType" : {
       "Description" : "WebServer EC2 instance type",
       "Type" : "String",
-      "Default" : "g2.2xlarge",
-      "AllowedValues" : [ "t2.micro", "t2.medium", "m3.medium", "c4.large", "c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge", "g2.2xlarge", "g2.8xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge"]
+      "Default" : "p2.xlarge",
+      "AllowedValues" : [ "t2.micro", "t2.medium", "m4.medium", "c4.large", "c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge", "g2.2xlarge", "g2.8xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge", "p2.xlarge", "p2.8xlarge", "p2.16xlarge"]
 ,
       "ConstraintDescription" : "must be a valid EC2 instance type."
     },
@@ -78,6 +78,7 @@
       "m4.2xlarge"  : { "Arch" : "HVM64"  },
       "m4.4xlarge"  : { "Arch" : "HVM64"  },
       "m4.10xlarge" : { "Arch" : "HVM64"  },
+      "m4.16xlarge" : { "Arch" : "HVM64"  },
       "c3.large"    : { "Arch" : "HVM64"  },
       "c3.xlarge"   : { "Arch" : "HVM64"  },
       "c3.2xlarge"  : { "Arch" : "HVM64"  },
@@ -90,6 +91,9 @@
       "c4.8xlarge"  : { "Arch" : "HVM64"  },
       "g2.2xlarge"  : { "Arch" : "HVMG2"  },
       "g2.8xlarge"  : { "Arch" : "HVMG2"  },
+      "p2.xlarge"   : { "Arch" : "HVMP2"  },
+      "p2.8xlarge"  : { "Arch" : "HVMP2"  },
+      "p2.16xlarge" : { "Arch" : "HVMP2"  },
       "r3.large"    : { "Arch" : "HVM64"  },
       "r3.xlarge"   : { "Arch" : "HVM64"  },
       "r3.2xlarge"  : { "Arch" : "HVM64"  },
@@ -109,7 +113,8 @@
       "cc2.8xlarge" : { "Arch" : "HVM64"  }
     },
     "AWSRegionArch2AMI" : {
-      "ap-southeast-2"   : {"HVM64" : "ami-58facb3b", "HVMG2" : "ami-6cfdcc0f"}
+      "ap-southeast-2" : {"HVM64" : "ami-58facb3b", "HVMG2" : "ami-6cfdcc0f"},
+      "us-west-2"      : {"HVMP2" : "ami-f40ed794"}
     }
 
   },
