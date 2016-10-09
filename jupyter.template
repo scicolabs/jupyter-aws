@@ -167,8 +167,12 @@
       "Value" : { "Fn::GetAtt" : [ "EC2Instance", "AvailabilityZone" ] }
     },
     "PublicDNS" : {
-      "Description" : "Public DNSName of the newly created EC2 instance",
+      "Description" : "Public DNS name of the newly created EC2 instance",
       "Value" : { "Fn::GetAtt" : [ "EC2Instance", "PublicDnsName" ] }
+    },
+    "PublicIP" : {
+      "Description" : "Public IP address of the newly created EC2 instance",
+      "Value" : { "Fn::GetAtt" : [ "EC2Instance", "PublicIp" ] }
     },
     "JupyterURL" : {
       "Description" : "URL for Jupyter on the instance",
